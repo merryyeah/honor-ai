@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html  {
+    background:#0c1424;
+}
+body {
+    min-width: 1200px;
+    max-width: 1920px;
+    margin:0 auto;
+}
+.login-page{
+    width: 100%;
+    height: 100%;
+    background:url(../image/login/bg.png) no-repeat top/cover;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+}
+
+.login-top{
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    background:url(../image/login/title.png) no-repeat center/cover;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.login-top .text{
+    height: 80px;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.login-top span{
+    font-size: 24px;
+    font-weight: bold;
+    background-image:linear-gradient(180deg, #6BFFF3 0%, #08B1FF 100%);; 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
+
+}
+.login-info{
+    width: 432px;
+    height: 392px;
+    background:url(../image/login/登录弹窗.png) no-repeat center/contain;
+    border-radius:5px;
+}
+.login-info .login-t{
+    margin: 40px auto;
+    margin-top: 80px;
+}
+.login-info .info{
+    width: 336px;
+    margin: 0 auto;
+}
+.login-info .input{
+    width: 100%;
+    height:40px;
+    margin: 20px auto;
+    position: relative;
+}
+.login-info .input input{
+    width:100%;
+    height:100%;
+    padding:0 16px;
+    background:#0F1F33;
+    outline: none;
+    border: none;
+    border:1px solid #394758;
+    border-radius:3px;
+    color:#fff;
+   
+}
+
+.login-info .login-password img{
+    position:absolute;
+    width: 20px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.login-submit{
+    width: 100%;
+    height:40px;
+    color: #fff;
+    background:url(../image/login/登录按钮.png) no-repeat center/contain;
+    margin:40px 0;
+    text-align: center;
+    line-height:40px;
+    cursor: pointer;
+}

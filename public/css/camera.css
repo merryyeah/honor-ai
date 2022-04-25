@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding:20px;
+}
+.camera-page{
+    width: 100%;
+    height: 100%;
+    padding:20px;
+    background:#fff;
+}
+.camera-page .page-top{
+   padding:20px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.page-table{
+    height:calc(100% - 100px)
+}
+.page-pagination{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.setMapBlock-body{
+    width: 100%;
+    height: 500px;
+    overflow:hidden !important;
+    position:relative;
+    border:1px solid #000;
+}
+.setMapBlock{
+   display:inline-block;
+   position:absolute;
+   cursor:pointer;
+}
+.setMapBlock .index-point{
+    width:0;
+    height:0;
+    position:absolute;
+    display:none;
+}
+.setMapBlock .index-point img{
+    position: absolute;
+    width: 144px;
+    left: -144px;
+    bottom:0;
+}
+
+#rightClickDiv{
+    display: none;
+    position: fixed;
+    width: 80px;
+    border: 1px solid #d8d8d8;
+    box-shadow:3px 3px 5px #dadada;
+    z-index: 10001;
+    background-color: white;
+}
+
+
+#rightClickDiv>.liHover{
+    position: relative;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.liHover:hover{
+	/*鼠标悬浮样式*/
+    background-color: #e1e1e1;
+}
+
+

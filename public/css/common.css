@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.html body {
+    min-width: 1200px;
+}
+
+img {
+    display: block;
+}
+
+.pad-40 {
+    padding: 40px;
+}
+
+.pad-16 {
+    padding: 24px;
+}
+
+.pad-24 {
+    padding: 16px;
+}
+
+.app-web {
+    width: 100%;
+    height: 100%;
+
+}
+
+.app-container {
+    width: 100%;
+    height: calc(100% - 72px);
+    display: flex;
+}
+
+.app-container .menu-container {
+    width: 256px;
+    height: 100%;
+    background: #0F2741;
+}
+
+.app-container .app-page {
+    width: calc(100% - 256px);
+    height: 100%;
+    background: #F5F5F5;
+}
+
+.app-header {
+    height: 72px;
+    background: #0C1C30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.app-header .app-title {
+    font-size: 24px;
+    background-image: linear-gradient(180deg, #6BFFF3 0%, #08B1FF 100%);
+    ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.app-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.app-header-right .right-item {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: #3BA4BA;
+    cursor: pointer;
+}
+
+.menu-container .menu-item {
+    color: #fff;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    padding: 12px 50px;
+    cursor: pointer;
+}
+
+.menu-container .menu-item .icon {
+    width: 16px;
+    margin-right: 10px;
+    ;
+}
+
+.menu-container .menu-item:hover {
+    opacity: 1;
+    background: #59A2B7;
+}
+
+.menu-container .active {
+    opacity: 1;
+    background: #59A2B7;
+}
+
+.app-page iframe {
+    border: none;
+    width: 100%;
+    height: 100%
+}
+
+
+.page-pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.page-pagination>div{
+    margin: 0 10px;
+    color:#3C4043;
+}
+
+.pagination {
+    color: #3C4043;
+    font-size: 14px;
+}
+
+.pagination a {
+    text-decoration: none !important;
+    color: #3C4043;
+}
+
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 0.2em 0.4em;
+}
+
+.pagination .active {
+    color: #3BA4BA;
+}
+
+
+.pagination .current.prev,
+.pagination .current.next {}
+
+.pagination .jump-ipt {
+    width: 50px;
+    height: 28px;
+    text-align: center;
+}
+
+.pagination .jump-btn {
+    border: none;
+}
+
+.modal {
+    opacity: 1 !important;
+    height: auto !important;
+}
+
+.btn-link{
+    color:#3BA4BA;
+}
+
+table {
+     width: 100%;
+     height: 100%;
+     /*设置相邻单元格的边框间的距离*/
+     border-spacing: 0;
+     /*表格设置合并边框模型*/
+     border-collapse: collapse;
+     text-align: center;
+}
+
+table td,
+table th {
+    border: 1px solid #FFFFFF;
+    color: #666;
+    height: 47px;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+table thead th {
+    background-color: #FAFAFA;
+    min-width: 100px;
+}
+
+
+table tr:nth-child(odd) {
+    background: #fff;
+}
+
+table tr:nth-child(even) {
+    background: #fff;
+}
+
+
+/*关键设置 tbody出现滚动条*/
+table tbody {
+    display: block;
+    height: calc(100% - 50px);
+    overflow-y: scroll;
+}
+
+table thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
